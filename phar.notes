@@ -1,0 +1,8 @@
+Edit /etc/php5/cli/php.ini (su priveledges needed)
+	Under [Phar] section change
+		;phar.readonly = On
+	to
+		phar.readonly = Off
+
+Restart Apache
+	sudo /etc/init.d/apache2 restart
